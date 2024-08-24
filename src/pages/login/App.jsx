@@ -1,30 +1,36 @@
-
 import './App.scss';
 
 function App() {
   return (
     <div className="App">
-      <div className='login'>
-        <div className='imagens'>
-
-        </div>
         <div className='interativo'>
-          <div className='quadradoUm'>
-            <img className='instagramEscrita' src="" alt="" />
-            <div className='campos'>
 
+          <div className='quadradoUm'>
+
+            <img className='instagramEscrita' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" alt="" />
+            
+            <div className='campos'>
+              <input type="text" />
+              <input type="text" />
             </div>
 
+            <button className='entrar'>Entrar</button>
+
+            <a href="#"><img src="https://seeklogo.com/images/F/facebook-icon-logo-C61047A9E7-seeklogo.com.png" alt=""/> Entrar com o Facebook</a>
+            <a href="#">Esqueceu a senha?</a>
           </div>
+
           <div className='quadradoDois'>
             <p>Não tem uma conta?</p><a href="#">Cadastre-se</a>
           </div>
+
+          <div className='obter'>
           <p>Obtenha o aplicativo.</p>
           <div className='baixar'>
-            <button><img src="" alt="" /></button>
-            <button><img src="" alt="" /></button>
+            <button className='play'><img src="https://static.cdninstagram.com/rsrc.php/v3/y_/r/tUzYKZ-xrQK.png" alt="" /></button>
+            <button className='micro'><img src="https://static.cdninstagram.com/rsrc.php/v3/yE/r/QQnPXT5YsC4.png" alt="" /></button>
           </div>
-        </div>
+          </div>
       </div>
       <div className='rodape'>
         <nav>
@@ -43,9 +49,9 @@ function App() {
           <a href="">Meta Verified</a>
         </nav>
         <div className='final'>
-          <p>Português (Brasil) e313</p>
+          <p>Português (Brasil)</p>
           <p>© 2024 Instagram from Meta</p>
-          </div>
+        </div>
       </div>
     </div>
   );
