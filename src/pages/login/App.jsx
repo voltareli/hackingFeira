@@ -1,4 +1,5 @@
 import './App.scss';
+import './global.scss';
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
             </div>
 
             <button className='entrar'>Entrar</button>
-
-            <a href="#"><img src="https://seeklogo.com/images/F/facebook-icon-logo-C61047A9E7-seeklogo.com.png" alt=""/> Entrar com o Facebook</a>
+            <div className='face'>
+              <a href="#"><img src="https://seeklogo.com/images/F/facebook-icon-logo-C61047A9E7-seeklogo.com.png" alt=""/> Entrar com o Facebook</a>
+            </div>
             <a href="#">Esqueceu a senha?</a>
           </div>
 
@@ -32,27 +34,29 @@ function App() {
           </div>
           </div>
       </div>
-      <div className='rodape'>
-        <nav>
-          <a href="">Meta</a>
-          <a href="">Sobre</a>
-          <a href="">Blog</a>
-          <a href="">Carreiras</a>
-          <a href="">Ajuda</a>
-          <a href="">API</a>
-          <a href="">Privacidade</a>
-          <a href="">Termos</a>
-          <a href="">Localizações</a>
-          <a href="">Instagram Lite</a>
-          <a href="">Threads</a>
-          <a href="">Carregamento de contatos e não usuários</a>
-          <a href="">Meta Verified</a>
-        </nav>
-        <div className='final'>
-          <p>Português (Brasil)</p>
-          <p>© 2024 Instagram from Meta</p>
+      <footer>
+          <div className='rodape'>
+          <nav>
+            <a href="">Meta</a>
+            <a href="">Sobre</a>
+            <a href="">Blog</a>
+            <a href="">Carreiras</a>
+            <a href="">Ajuda</a>
+            <a href="">API</a>
+            <a href="">Privacidade</a>
+            <a href="">Termos</a>
+            <a href="">Localizações</a>
+            <a href="">Instagram Lite</a>
+            <a href="">Threads</a>
+            <a href="">Carregamento de contatos e não usuários</a>
+            <a href="">Meta Verified</a>
+          </nav>
+          <div className='final'>
+            <p>Português (Brasil)</p>
+            <p>© 2024 Instagram from Meta</p>
+          </div>
         </div>
-      </div>
+      </footer>
     </div>
   );
 }

@@ -11,6 +11,9 @@ justify-content: center;
 align-items: center;
 flex-direction: column;
 gap: 10px;
+height: 100%;
+margin: 0 0 44px 0;
+position: relative;
 }
 
 .quadradoUm{
@@ -26,6 +29,7 @@ gap: 10px;
 
 .instagramEscrita{
 width: 175px;
+margin-bottom: 30px; 
 }
 
 .campos{
@@ -122,4 +126,28 @@ a img{
 
 .final{
 
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.face{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.face a{
+    font: 600 14px 'helvetica';
+    color: #385185;
+}
+
+.face img{
+width: 12px;
 }
