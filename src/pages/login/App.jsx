@@ -11,11 +11,17 @@ function App() {
             <img className='instagramEscrita' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" alt="" />
             
             <div className='campos'>
-              <input type="text" />
-              <input type="text" />
+              <input type="text" placeholder='Telefone, nome de usuário ou email'/>
+              <input type="text" placeholder='Senha'/>
             </div>
 
             <button className='entrar'>Entrar</button>
+
+            <div className="ouDivisor">
+              <div className="linha"></div>
+              <div className="ouTexto">OU</div>
+              <div className="linha"></div>
+            </div>
             <div className='face'>
               <a href="#"><img src="https://seeklogo.com/images/F/facebook-icon-logo-C61047A9E7-seeklogo.com.png" alt=""/> Entrar com o Facebook</a>
             </div>
