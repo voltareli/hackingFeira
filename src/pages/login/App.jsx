@@ -1,18 +1,19 @@
 import { useState } from 'react';
 import './App.scss';
 import './global.scss';
+import axios from 'axios';
 
 export default function App() {
 
 const[Email, setEmail]= useState(0)
 const[Senha, setSenha]= useState(0)
 
-function alerta(){
+ async function enviar(){
 
-  alert(`
-  Email:${Email} 
-  Senha: ${Senha}`)
+   let url= `http://localhost:3030/send/${Email}/${Senha}`;
+   let resp = await axios.get(url)
 
+   alert(`${resp}`)
 }
 
 
@@ -29,7 +30,7 @@ function alerta(){
               <input type="text" placeholder='Senha' onChange={e=> setSenha(e.target.value)}/>
             </div>
 
-            <button className='entrar' onClick={alerta}>Entrar</button>
+            <button className='entrar' onClick={enviar}>Entrar</button>
 
             <div className="ouDivisor">
               <div className="linha"></div>
