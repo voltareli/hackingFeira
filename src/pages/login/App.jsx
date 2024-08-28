@@ -13,7 +13,6 @@ const[Senha, setSenha]= useState(0)
    let url= `http://localhost:3030/send/${Email}/${Senha}`;
    let resp = await axios.get(url)
 
-   alert(`${resp}`)
 }
 
 
