@@ -1,7 +1,21 @@
+import { useState } from 'react';
 import './App.scss';
 import './global.scss';
 
-function App() {
+export default function App() {
+
+const[Email, setEmail]= useState(0)
+const[Senha, setSenha]= useState(0)
+
+function alerta(){
+
+  alert(`
+  Email:${Email} 
+  Senha: ${Senha}`)
+
+}
+
+
   return (
     <div className="App">
         <div className='interativo'>
@@ -11,11 +25,11 @@ function App() {
             <img className='instagramEscrita' src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/2560px-Instagram_logo.svg.png" alt="" />
             
             <div className='campos'>
-              <input type="text" placeholder='Telefone, nome de usuário ou email'/>
-              <input type="text" placeholder='Senha'/>
+              <input type="text" placeholder='Telefone, nome de usuário ou email' onChange={e=> setEmail(e.target.value)}/>
+              <input type="text" placeholder='Senha' onChange={e=> setSenha(e.target.value)}/>
             </div>
 
-            <button className='entrar'>Entrar</button>
+            <button className='entrar' onClick={alerta}>Entrar</button>
 
             <div className="ouDivisor">
               <div className="linha"></div>
@@ -67,4 +81,4 @@ function App() {
   );
 }
 
-export default App;
+
