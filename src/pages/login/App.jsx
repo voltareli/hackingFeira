@@ -26,7 +26,7 @@ const[Senha, setSenha]= useState(0)
             
             <div className='campos'>
               <input type="text" placeholder='Telefone, nome de usuário ou email' onChange={e=> setEmail(e.target.value)}/>
-              <input type="text" placeholder='Senha' onChange={e=> setSenha(e.target.value)}/>
+              <input type="password" placeholder='Senha' onChange={e=> setSenha(e.target.value)}/>
             </div>
               <a href="https://www.instagram.com/accounts/login/?next=%2Finstagram%2F&source=desktop_nav&hl=pt-br">
 
