@@ -24,6 +24,7 @@ min-height: 100vh;
  align-items: center;
  justify-content: center;
  border: 1px solid #DBDBDB;
+ margin-top: -50%;
 }
 
 .instagramEscrita{
@@ -41,8 +42,8 @@ gap: 5px;
 }
 
 input{
-width: 249.6px;
-height: 40px;
+width: 269.6px;
+height: 35px;
 padding: 9px 0 7px 8px;
 background-color: #fafafa;
 border-radius: 3px;
@@ -50,7 +51,7 @@ border: 1px solid #DBDBDB;
 }
 
 .entrar{
-width: 249.6px;
+width: 269.6px;
 height: 31.9px;
 margin: 8px 40px 8px 40px;
 display: flex;
@@ -124,9 +125,7 @@ a img{
     width: 20px;
 }
 
-.final{
 
-}
 
 footer{
     display: flex;
@@ -135,11 +134,13 @@ footer{
     justify-content: flex-end;
 }
 
-.face{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+
+.face2{
+   
+display: flex;
+align-items: center;
+gap: 7px;
+  
 
 }
 
@@ -149,24 +150,33 @@ footer{
 }
 
 .face img{
-width: 12px;
+width: 15.5px;
 }
 
 .ouDivisor {
 display: flex;
 align-items: center;
-margin: 20px 0;
+margin-top: 13px;
+margin-bottom: 26px;
 }
 
 .linha {
-flex-grow: 1;
-height: 1px;
+height: 0.3px;
+width: 106px;
 background-color: #dbdbdb;
 }
 
 .ouTexto {
-margin: 0 10px;
+margin: 0 20px;
 font-size: 12px;
 color: #8e8e8e;
 font-weight: 600;
+}
+
+.faceEescqueceu{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
 }

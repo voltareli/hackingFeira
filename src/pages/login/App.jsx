@@ -38,11 +38,15 @@ const[Senha, setSenha]= useState(0)
               <div className="ouTexto">OU</div>
               <div className="linha"></div>
             </div>
+
+            <div className='faceEescqueceu'>
+
             <div className='face'>
-              <a href="#"><img src="https://seeklogo.com/images/F/facebook-icon-logo-C61047A9E7-seeklogo.com.png" alt=""/> Entrar com o Facebook</a>
+              <a className= 'face2' href="#"><img src="https://seeklogo.com/images/F/facebook-icon-logo-C61047A9E7-seeklogo.com.png" alt=""/> Entrar com o Facebook</a>
             </div>
             <a href="#">Esqueceu a senha?</a>
           </div>
+            </div>
 
           <div className='quadradoDois'>
             <p>Não tem uma conta?</p><a href="#">Cadastre-se</a>
